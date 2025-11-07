@@ -1,0 +1,39 @@
+User-agent: *
+Allow: /
+
+# High-priority pages for crawling
+Allow: /services/
+Allow: /locations/
+Allow: /locations/vancouver/
+Allow: /locations/portland/
+
+# Disallow admin/development areas
+Disallow: /admin/
+Disallow: /test/
+Disallow: /staging/
+Disallow: /_/
+Disallow: /temp/
+
+# Allow common crawlers access to CSS and JS for rendering
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Sitemap location
+Sitemap: https://allproductcleaning.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Special instructions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
